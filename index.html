@@ -46,11 +46,10 @@
 
           <!--DROPDOWN START-->
           <div class="btn-group">
-            
             <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="fa-solid fa-gear"></i>
             </button>
-            <ul class="dropdown-menu dropdown-menu-end">
+            <ul class="dropdown-menu dropdown-menu-end mt-2">
               <li><button class="dropdown-item" type="button">Profile</button></li>
               <li><button class="dropdown-item" type="button">Accesibility</button></li>
               <li><button class="dropdown-item" type="button">Privacy and Data</button></li>
@@ -66,21 +65,21 @@
     <!--NAVS & TABS START. Cogí el que estaba centrado y añadí role y data-bs-toggle-->
     <ul class="nav justify-content-center" id="blue-tab" role="tablist">
       <li class="nav-item" role="presentation">
-        <a class="nav-link active" aria-current="page" href="#feed" data-bs-toggle="tab"><i class="fa-solid fa-table-cells"></i></a>
+        <a class="nav-link active link-secondary link-opacity-10-hover" aria-current="page" href="#feed" data-bs-toggle="tab"><i class="fa-solid fa-table-cells"></i></a>
       </li>
       <li class="nav-item" role="presentation">
-        <a class="nav-link" href="#individual" data-bs-toggle="tab"><i class="fa-solid fa-square"></i></a>
+        <a class="nav-link link-secondary link-opacity-10-hover" href="#individual" data-bs-toggle="tab"><i class="fa-solid fa-square"></i></a>
       </li>
     </ul>
     <!--FADE EFFECT de Navs & Tabs. href y id deben coincidir-->
     <div class="tab-content" id="blue-tabContent">
+      <!--COMIENZO DEL FEED-->
       <div class="tab-pane fade show active" id="feed" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-        <!--COMIENZO DEL FEED-->
-        <div class="container-fluid col-11 col-xxl-12">
-          <div class="row justify-content">
+        <div class="container-fluid col-11 col-xxl-8">
+          <div class="row">
             <div class="col-12 col-sm-4 mb-3">
               <img src="https://i.pinimg.com/564x/59/c6/d5/59c6d53e7606c8a12cb0c0faf44146db.jpg" class="img-fluid h-100 object-fit-cover" alt="Julia Roberts Joven">
-            </div>
+          </div>
             <div class="col-12 col-sm-4 mb-3">
               <img src="https://i.pinimg.com/564x/50/1e/91/501e912e260435a33381cf892187c92f.jpg" class="img-fluid h-100 object-fit-cover" alt="Libros y Mp3">
             </div>
@@ -101,7 +100,7 @@
           </div>
           <div class="row">
             <div class="col-12 col-sm-4 mb-3">
-              <img src="https://i.pinimg.com/564x/66/9e/4d/669e4d760cdca3011d1591c70ca2d6c9.jpg" class="img-fluid h-100 object-fit-cover" alt="Selfie en e">
+              <img src="https://i.pinimg.com/564x/66/9e/4d/669e4d760cdca3011d1591c70ca2d6c9.jpg" class="img-fluid h-100 object-fit-cover" alt="Selfie en el espejo">
             </div>
             <div class="col-12 col-sm-4 mb-3">
               <img src="https://i.pinimg.com/564x/69/0b/60/690b60f18539cf47e7362b82d6e78d7e.jpg" class="img-fluid h-100 object-fit-cover" alt="Conjunto de cuadros de paisajes">
@@ -111,11 +110,11 @@
             </div>
           </div>
         </div>
-        <!--FIN DEL FEED-->
       </div>
+      <!--FIN DEL FEED-->
+      <!--COMIENDO DE INDIVIDUAL-->
       <div class="tab-pane fade" id="individual" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-        <!--COMIENDO DE INDIVIDUAL-->
-        <div class="container-fluid col-7 ">
+        <div class="container-fluid col-7 col-xxl-4">
           <div class="row justify-content-center mb-4">
             <div class="col-10 border">
               <div class="d-flex flex-row justify-content-between">
@@ -123,7 +122,7 @@
                 <p class="fs-6 pt-1">27/07</p>
               </div>
               <div>
-                <img src="https://i.pinimg.com/564x/59/c6/d5/59c6d53e7606c8a12cb0c0faf44146db.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Julia Roberts Joven">
+                <img src="https://i.pinimg.com/564x/59/c6/d5/59c6d53e7606c8a12cb0c0faf44146db.jpg" class="img-flui w-100 h-100 object-fit-cover" alt="Julia Roberts Joven">
               </div>
               <div>
                 <p class="fw-bold pt-2 mb-0">204 Likes</p>
@@ -146,7 +145,7 @@
               </div>
             </div>
           </div>
-          <div class="row justify-content-center">
+          <div class="row justify-content-center mb-4">
             <div class="col-10 border">
               <div class="d-flex flex-row justify-content-between">
                 <p class="fs-4 pt-1">On loop</p>
@@ -162,10 +161,8 @@
             </div>
           </div>
         </div>
-        <!--FIN DE INDIVIDUAL-->
       </div>
-
-    
+      <!--FIN DE INDIVIDUAL-->
     </div>
     <!--NAVS & TABS END-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
